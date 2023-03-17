@@ -10,6 +10,7 @@ create Table Address_Book
 insert into Address_Book values
 ('Ramesh', 'Ray', 'Man dkd', 'NYC', 'NewYork', 503131, 8425622829, 'Ramesh90@gmail.com'),
 ('Mila', 'Huffman', '7th street', 'Chennai','TN', 799825, 8239999825, 'Milaa905@gmail.com'),
+('Amy', 'Huffman', '9th street', 'Chennai','TN', 799825, 9002399998, 'Amy7875@gmail.com'),
 ('Steve', 'Jobs', 'Wall Street', 'NYC', 'NewYork', 55831, 6857655831, 'Steve66788@gmail.com'),
 ('Arya', 'Khan', 'Sillicon Vally', 'San Franscio', 'Calforinia', 725929, 9228725929 , 'Arya2345@gmail.com'),
 ('Tony', 'Stark', 'HighTechCity', 'Hyd', 'TS', 552489, 7836152489, 'Tony7889@gmail.com');
@@ -30,3 +31,6 @@ Select * from Address_Book where State='TS';
 ---- UC7 Size of address book by City and State ----
 select Count(*) as Size_Of_Address_Book_By_City from Address_Book  where City='Hyd';
 select Count(*) as Size_Of_Address_Book_By_State from Address_Book  where State='Ts';
+
+---- UC8 Sort address book  ----
+Select * from Address_Book where City='chennai' Order by First_Name;
