@@ -20,5 +20,9 @@ select * from Address_Book;
 update Address_Book set City='Banglore' where First_Name='Steve';
 update Address_Book set Address='Tambaram' where First_Name='Mila';
 
---UC5 Delete Contact using person's name
+---- UC5 Delete Contact using person's name ----
 delete from Address_Book where First_Name='Ramesh';
+
+---- UC5 Retrieve Contact belonging to a City or State from the Address Book ----
+Select * from Address_Book where city='Chennai';
+Select * from Address_Book where State='TS';
