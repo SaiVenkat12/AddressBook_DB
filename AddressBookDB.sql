@@ -15,3 +15,7 @@ insert into Address_Book values
 ('Tony', 'Stark', 'HighTechCity', 'Hyd', 'TS', 552489, 7836152489, 'Tony7889@gmail.com');
 
 select * from Address_Book;
+
+---- UC4 Edit Contacts in the Address Book Table ----
+update Address_Book set City='Banglore' where First_Name='Steve';
+update Address_Book set Address='Tambaram' where First_Name='Mila';
