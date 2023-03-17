@@ -23,6 +23,10 @@ update Address_Book set Address='Tambaram' where First_Name='Mila';
 ---- UC5 Delete Contact using person's name ----
 delete from Address_Book where First_Name='Ramesh';
 
----- UC5 Retrieve Contact belonging to a City or State from the Address Book ----
+---- UC6 Retrieve Contact belonging to a City or State from the Address Book ----
 Select * from Address_Book where city='Chennai';
 Select * from Address_Book where State='TS';
+
+---- UC7 Size of address book by City and State ----
+select Count(*) as Size_Of_Address_Book_By_City from Address_Book  where City='Hyd';
+select Count(*) as Size_Of_Address_Book_By_State from Address_Book  where State='Ts';
